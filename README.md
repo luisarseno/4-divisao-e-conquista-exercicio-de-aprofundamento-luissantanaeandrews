@@ -7,7 +7,7 @@ Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
 * Para cada execução, teste para os valores indicados;
 * Indique, dadas as execuções, qual seria a complexidade assintótica dos algortimos representados pelas recorrências.
 
-1 O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
+1. O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
   * recursivamente ordene a metade esquerda do vetor
   * recursivamente ordene a metade diretita do vetor
   * mescle (faça o merge) das duas metades para ter o vetor ordenado.
@@ -26,4 +26,26 @@ Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
       B ← MERGE-SORT(B).
       L ← MERGE(A, B).
       RETURN L. 
+  ```
+  
+  1. A Multiplicação Inteira de n-bits recebe dois números inteiros x e y de n-bits e retorna o resutado de x * y.
+  
+  Assim, novamente:
+  
+  * implemente o algortimo abaixo;
+  * teste-o para os 3 casos de valores inteiros: com 4 bits, com 16 bits e com 128 bits. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto.
+  
+  ```java
+  MULTIPLY(x, y, n) 
+     IF (n = 1)
+        RETURN x * y.
+     ELSE
+        m ← ⎡ n / 2 ⎤.
+        a ← ⎣ x / 2^m ⎦; b ← x mod 2^m.
+     c ← ⎣ y / 2^m ⎦; d ← y mod 2^m.
+     e ← MULTIPLY(a, c, m).
+     f ← MULTIPLY(b, d, m).
+     g ← MULTIPLY(b, c, m).
+     h ← MULTIPLY(a, d, m).
+     RETURN 2^(2m)*e + 2^m*(g + h) + f.
   ```
