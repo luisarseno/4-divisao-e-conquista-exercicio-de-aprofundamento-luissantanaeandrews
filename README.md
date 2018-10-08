@@ -12,10 +12,10 @@ Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
    * recursivamente ordene a metade diretita do vetor
    * mescle (faça o merge) das duas metades para ter o vetor ordenado.
   
-  Assim:
+   Assim:
   
-   * implemente o algortimo abaixo;
-   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+     * implemente o algortimo abaixo;
+     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
   
   ```java
   MERGE-SORT(L: List with n elements) : Ordered list with n elements
@@ -28,9 +28,9 @@ Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
       RETURN L. 
   ```
   
-  1. A Multiplicação Inteira de n-bits recebe dois números inteiros x e y de n-bits e retorna o resutado de x * y.
+1. A Multiplicação Inteira de n-bits recebe dois números inteiros x e y de n-bits e retorna o resutado de x * y.
   
-  Assim, novamente:
+   Assim, novamente:
   
      * implemente o algortimo abaixo;
      * teste-o para os 3 casos de valores inteiros: com 4 bits, com 16 bits e com 128 bits. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto.
