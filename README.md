@@ -25,5 +25,5 @@ Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
       A ← MERGE-SORT(A).
       B ← MERGE-SORT(B).
       L ← MERGE(A, B).
-  RETURN L. ]
+      RETURN L. 
   ```
