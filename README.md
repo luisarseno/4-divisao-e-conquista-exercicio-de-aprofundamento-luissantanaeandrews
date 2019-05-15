@@ -1,12 +1,5 @@
 # Enunciado para exercício preparatório sobre Divisão e Conquista
 
-Implemente os dois algorítmos abaixo, atentando para os aspectos mencionados.
-
-   * Implemente um método que implementa a contagem feita pelas recorrências abaixo;
-   * Para cada uma delas, execute e teste para os valores propostos;
-   * Para cada execução, teste para os valores indicados;
-   * Indique, dadas as execuções, qual seria a complexidade assintótica dos algortimos representados pelas recorrências.
-
 1. O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
    * recursivamente ordene a metade esquerda do vetor
    * recursivamente ordene a metade diretita do vetor
