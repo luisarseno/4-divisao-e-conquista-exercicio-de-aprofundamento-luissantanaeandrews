@@ -1,13 +1,16 @@
 # Enunciado para exercício preparatório sobre Divisão e Conquista
 
 1. Vamos começar com um algorítmo já estudado e conhecido (em AEDI). O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
+
     * recursivamente ordene a metade esquerda do vetor
     * recursivamente ordene a metade diretita do vetor
     * mescle (faça o merge) das duas metades para ter o vetor ordenado. 
     
   Assim:
+  
     * implemente o algortimo abaixo;
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;  
+    
    ```java
    MERGE-SORT(L: List with n elements) : Ordered list with n elements
        IF (list L has one element)
@@ -18,7 +21,9 @@
        L ← MERGE(A, B).
        RETURN L. 
    ```
-1. O algoritmo a seguir (que não utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+   
+2. O algoritmo a seguir (que não utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+
    ```java
    int maxVal1(int A[], int n) {  
        int max = A[0];
@@ -29,10 +34,14 @@
        return max;
    }
    ```
+   
   Assim, novamente:
+  
     * implemente o algortimo abaixo;
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
-1. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+    
+3. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+
    ```java
    int maxVal2(int A[], int init, int end) {  
        if (end - init <= 1)
@@ -45,7 +54,10 @@
             }
    }
    ```
+   
   Assim, novamente:
+  
     * implemente o algortimo abaixo;
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
-1. Monte uma tabela com os resultados das execuções acima. As linhas da tabela são os algoritmos implementados, as colunas o tamanho dos vetores usados para testar e contabilizar.
+    
+4. Monte uma tabela com os resultados das execuções acima. As linhas da tabela são os algoritmos implementados, as colunas o tamanho dos vetores usados para testar e contabilizar.
