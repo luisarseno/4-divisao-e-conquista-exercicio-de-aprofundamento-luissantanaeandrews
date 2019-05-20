@@ -7,8 +7,9 @@
     * mescle (faça o merge) das duas metades para ter o vetor ordenado. 
     
   Assim:
-    * implemente o algortimo abaixo;
-    * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;  
+    
+   * implemente o algortimo abaixo;
+   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;  
     
    ```java
    MERGE-SORT(L: List with n elements) : Ordered list with n elements
@@ -35,8 +36,9 @@
    ```
    
   Assim, novamente:
-    * implemente o algortimo abaixo;
-    * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+   
+   * implemente o algortimo abaixo;
+   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
 3. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
 
@@ -54,7 +56,8 @@
    ```
    
   Assim, novamente:
-    * implemente o algortimo abaixo;
-    * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+   
+   * implemente o algortimo abaixo;
+   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
 4. Monte uma tabela com os resultados das execuções acima. As linhas da tabela são os algoritmos implementados, as colunas o tamanho dos vetores usados para testar e contabilizar.
