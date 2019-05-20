@@ -1,6 +1,6 @@
 # Enunciado para exercício preparatório sobre Divisão e Conquista
 
-1. O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
+1. Vamos começar com um algorítmo já estudado e conhecido (em AEDI). O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
    * recursivamente ordene a metade esquerda do vetor
    * recursivamente ordene a metade diretita do vetor
    * mescle (faça o merge) das duas metades para ter o vetor ordenado.
@@ -20,25 +20,40 @@
       L ← MERGE(A, B).
       RETURN L. 
   ```
+1. O algoritmo a seguir (que não utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+
+```java
+int maxVal1(int A[], int n) {  
+    int max = A[0];
+    for (int i = 1; i < n; i++) {  
+        if( A[i] > max ) 
+           max = A[i];
+    }
+    return max;
+}
+```
+Assim, novamente:
   
-1. A Multiplicação Inteira de n-bits recebe dois números inteiros x e y de n-bits e retorna o resutado de x * y.
+   * implemente o algortimo abaixo;
+   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+   
+1. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+
+```java
+int maxVal2(int A[], int init, int end) {  
+    if (end - init <= 1)
+        return max(A[init], A[end]);  
+    else {
+          int m = (init + end)/2;
+          int v1 = maxVal2(A,init,m);   
+          int v2 = maxVal2(A,m+1,end);  
+          return max(v1,v2);
+         }
+}
+```
+
+Assim, novamente:
   
-   Assim, novamente:
-  
-     * implemente o algortimo abaixo;
-     * teste-o para os 3 casos de valores inteiros: com 4 bits, com 16 bits e com 128 bits. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto.
-  
-  ```java
-  MULTIPLY(x, y, n) 
-     IF (n = 1)
-        RETURN x * y.
-     ELSE
-        m ← ⎡ n / 2 ⎤.
-        a ← ⎣ x / 2^m ⎦; b ← x mod 2^m.
-        c ← ⎣ y / 2^m ⎦; d ← y mod 2^m.
-        e ← MULTIPLY(a, c, m).
-        f ← MULTIPLY(b, d, m).
-        g ← MULTIPLY(b, c, m).
-        h ← MULTIPLY(a, d, m).
-        RETURN 2^(2m)*e + 2^m*(g + h) + f.
-  ```
+   * implemente o algortimo abaixo;
+   * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+
