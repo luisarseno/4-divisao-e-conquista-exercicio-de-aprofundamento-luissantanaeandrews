@@ -3,7 +3,8 @@
 1. Vamos começar com um algorítmo já estudado e conhecido (em AEDI). O Merge Sort é um algorítmo de ordenação baseado nos seguintes passos:
     * recursivamente ordene a metade esquerda do vetor
     * recursivamente ordene a metade diretita do vetor
-    * mescle (faça o merge) das duas metades para ter o vetor ordenado.
+    * mescle (faça o merge) das duas metades para ter o vetor ordenado. 
+    
   Assim:
     * implemente o algortimo abaixo;
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;  
