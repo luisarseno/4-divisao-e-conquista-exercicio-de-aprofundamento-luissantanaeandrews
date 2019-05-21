@@ -24,6 +24,11 @@
    
 2. O algoritmo a seguir (que não utiliza divisão-e-conquista) encontra o maior valor em um vetor.
 
+    Assim, novamente:
+   
+    * implemente o algortimo abaixo;
+    * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
+    
    ```java
    int maxVal1(int A[], int n) {  
        int max = A[0];
@@ -34,14 +39,14 @@
        return max;
    }
    ```
-   
+    
+3. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
+
     Assim, novamente:
    
     * implemente o algortimo abaixo;
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
-3. O algoritmo a seguir (que utiliza divisão-e-conquista) encontra o maior valor em um vetor.
-
    ```java
    int maxVal2(int A[], int init, int end) {  
        if (end - init <= 1)
@@ -54,10 +59,5 @@
             }
    }
    ```
-   
-    Assim, novamente:
-   
-    * implemente o algortimo abaixo;
-    * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
 4. Monte uma tabela com os resultados das execuções acima. As linhas da tabela são os algoritmos implementados, as colunas o tamanho dos vetores usados para testar e contabilizar.
